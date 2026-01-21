@@ -1,5 +1,5 @@
 import React from "react";
-import meImg from "../assets/thande.jpg";
+import meImg from "../assets/thande.JPG";
 import { experience } from "../constants/data";
 
 export const About = ({
