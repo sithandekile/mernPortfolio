@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+
+body{
+    background-color: #fff;
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif */
+    font-family:  'Arial Narrow', Arial, sans-serif;
+
+}
+@layer utilities {
+  @keyframes spin-slow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  .animate-spin-slow {
+    animation: spin-slow 10s linear infinite;
+  }
+}
+
+/* circle styling */
+.circle-text {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  position: relative;
+}
+.circle-text span {
+  position: absolute;
+  left: 50%;
+  transform-origin: 0 125px;
+}
+
