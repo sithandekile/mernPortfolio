@@ -1,6 +1,7 @@
 import React from "react";
 import { FaArrowDown, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
-import heroImage from "../assets/skillsHero.jpg";
+import heroImage from "../assets/skillsHero.png";
+import { FaWhatsapp } from "react-icons/fa6";
 
 export const Hero = () => {
   const scrollToSection = (sectionId) => {
@@ -14,13 +15,9 @@ export const Hero = () => {
     <section
       id="home"
       className="min-h-screen flex items-center justify-center relative overflow-hidden bg-cover bg-fixed"
-      style={{ backgroundImage: `url(${heroImage})` }}>
+       style={{ backgroundImage: `url(${heroImage})`,backgroundSize:'cover' }} >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-black/70 to-purple-900/30"></div>
-
-      {/* Floating blobs */}
-      <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-sky-500/10 rounded-full blur-3xl animate-float"></div>
-      <div className="absolute bottom-1/4 right-1/4 w-56 h-56 bg-pink-500/10 rounded-full blur-3xl animate-float delay-1000"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-black opacity-50 to-purple-900/30"></div>
 
       {/* Content */}
       <div className="relative z-10 px-6 mt-32 w-full max-w-4xl">
@@ -35,19 +32,12 @@ export const Hero = () => {
           </h1>
 
           {/* Subtitle */}
-          <h2 className="text-xl md:text-3xl text-gray-300 mb-6 font-light animate-fade-in delay-200">
+          <h3 className="text-xl md:text-3xl text-white mb-6 font-light animate-fade-in delay-200">
             Full Stack <span className="text-sky-400 font-medium">MERN</span>{" "}
             Developer · Johannesburg
-          </h2>
+          </h3>
 
-          {/* Description */}
-          <p className="text-base md:text-lg text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-in delay-300">
-            I build fast, scalable web applications using MongoDB, Express, React,
-            and Node.js — focused on clean UI, solid backend logic, and real-world
-            performance.
-          </p>
-
-          {/* CTA Buttons */}
+          {/* Call To Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-in delay-500">
             <button
               onClick={() => scrollToSection("projects")}
@@ -69,12 +59,14 @@ export const Hero = () => {
             >
               Download CV
             </a>
+            {/* <a href="./assets/myResume.pdf" download target="_blank" class="glowing-btn" style="background-color: rgb(26,24,24);"> */}
+
           </div>
 
           {/* Social Links */}
           <div className="flex justify-center gap-6 mb-10 animate-fade-in delay-700">
             <a
-              href="https://github.com"
+              href="https://github.com/sithandekile"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-white/5 backdrop-blur
@@ -84,9 +76,8 @@ export const Hero = () => {
             >
               <FaGithub size={22} />
             </a>
-
             <a
-              href="https://linkedin.com"
+              href="https://github.com/sithandekile"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-white/5 backdrop-blur
@@ -98,7 +89,7 @@ export const Hero = () => {
             </a>
 
             <a
-              href="mailto:alex@example.com"
+              href="https://github.com/sithandekile"
               className="p-3 rounded-full bg-white/5 backdrop-blur
               text-gray-400 hover:text-sky-400
               hover:bg-sky-500/20 hover:-translate-y-1
@@ -106,7 +97,15 @@ export const Hero = () => {
             >
               <FaEnvelope size={22} />
             </a>
-          </div>
+          
+          <a href="https://wa.me/27670118494" target="_blank"
+          className="p-3 rounded-full bg-white/5 backdrop-blur
+              text-emerald-400 hover:text-sky-400
+              hover:bg-sky-500/20 hover:-translate-y-1
+              transition-all duration-300" >
+             <FaWhatsapp size={22}/>
+             </a>
+             </div>
 
           {/* Scroll indicator */}
           <button

@@ -19,7 +19,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24 bg-black relative">
+    <section id="contact" className="py-24 bg-zinc-50  relative">
       <div className="container mx-auto px-6">
 
         {/* Heading */}
@@ -30,7 +30,7 @@ const Contact = () => {
               Touch
             </span>
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             Have a project in mind or want to work together?  
             I’m always open to discussing new opportunities.
           </p>
@@ -39,12 +39,12 @@ const Contact = () => {
         <div className="grid lg:grid-cols-3 gap-12">
 
           {/* Form */}
-          <div className="lg:col-span-2 bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8">
+          <div className="lg:col-span-2 bg-black/80 backdrop-blur-md border border-white/10 rounded-2xl p-8">
             <h3 className="text-2xl font-semibold text-white mb-2">
               Send a Message
             </h3>
             <p className="text-gray-400 mb-8">
-              Fill out the form below and I’ll respond as soon as possible.
+              Fill out the form below and I will respond as soon as possible.
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -56,7 +56,7 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full p-3 rounded-lg bg-black/40 border border-white/10
+                  className="w-full p-3 rounded-lg bg-black/10 
                   text-white placeholder-gray-500 focus:outline-none
                   focus:border-sky-400 transition"
                 />
@@ -68,7 +68,7 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full p-3 rounded-lg bg-black/40 border border-white/10
+                  className="w-full p-3 rounded-lg bg-black/10 
                   text-white placeholder-gray-500 focus:outline-none
                   focus:border-sky-400 transition"
                 />
@@ -81,7 +81,7 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 rows={6}
-                className="w-full p-3 rounded-lg bg-black/40 border border-white/10
+                className="w-full p-3 rounded-lg bg-black/10
                 text-white placeholder-gray-500 resize-none focus:outline-none
                 focus:border-sky-400 transition"
               />
@@ -102,7 +102,7 @@ const Contact = () => {
           <div className="space-y-8">
 
             {/* Contact Info */}
-            <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6">
+            <div className="bg-black/80 backdrop-blur-md border border-white/10 rounded-2xl p-6">
               <h3 className="text-xl font-semibold text-white mb-6">
                 Contact Information
               </h3>
@@ -127,7 +127,7 @@ const Contact = () => {
             </div>
 
             {/* Socials */}
-            <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6">
+            <div className="bg-black/80 backdrop-blur-md  rounded-2xl p-6">
               <h3 className="text-xl font-semibold text-white mb-6">
                 Connect With Me
               </h3>

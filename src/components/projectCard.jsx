@@ -4,7 +4,7 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 export const ProjectCard = ({ card_list }) => {
   return (
     <div
-      className={`group relative bg-white/5 backdrop-blur-md
+      className={`group relative bg-black/80 backdrop-blur-md
       border border-white/10 rounded-2xl
       transition-all duration-300
       hover:-translate-y-1 hover:shadow-xl hover:shadow-sky-500/10
@@ -21,12 +21,12 @@ export const ProjectCard = ({ card_list }) => {
         />
 
         {/* Overlay links */}
-        <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-4">
+        <div className="absolute inset-0 bg-black/60 flex items-center justify-center gap-4 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition">
           <a
             href={card_list.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-3 rounded-full bg-white/10 text-white hover:bg-white/20 transition"
+            className="p-3 rounded-full bg-sky-500 text-white hover:bg-white/10 transition"
           >
             <FaGithub size={18} />
           </a>
@@ -34,7 +34,7 @@ export const ProjectCard = ({ card_list }) => {
             href={card_list.live}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-3 rounded-full bg-white/10 text-white hover:bg-white/20 transition"
+            className="p-3 rounded-full bg-sky-500 text-white hover:bg-white/10 transition"
           >
             <FaExternalLinkAlt size={18} />
           </a>
@@ -58,7 +58,7 @@ export const ProjectCard = ({ card_list }) => {
         </div>
 
         {/* Description */}
-        <p className="text-sm text-gray-400 leading-relaxed line-clamp-3">
+        <p className="text-sm text-gray-200 leading-relaxed line-clamp-3">
           {card_list.description}
         </p>
 
@@ -68,7 +68,7 @@ export const ProjectCard = ({ card_list }) => {
             <span
               key={tech}
               className="text-xs px-2 py-1 rounded-full
-              bg-white/5 text-gray-300 border border-white/10"
+              bg-sky-500/10 text-sky-500 border border-white/10"
             >
               {tech}
             </span>

@@ -2,32 +2,22 @@
 
 
 body{
-    background-color: #fff;
-    /* font-family:Verdana, Geneva, Tahoma, sans-serif */
     font-family:  'Arial Narrow', Arial, sans-serif;
-
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif */
+    /* background-color:#eff6ff; */
 }
-@layer utilities {
-  @keyframes spin-slow {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+h2{
+  color:#5E5E5E;
+}
+/* @keyframes float {
+  0%, 100% {
+    transform: translateY(0);
   }
-
-  .animate-spin-slow {
-    animation: spin-slow 10s linear infinite;
+  50% {
+    transform: translateY(-8px);
   }
 }
 
-/* circle styling */
-.circle-text {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  position: relative;
-}
-.circle-text span {
-  position: absolute;
-  left: 50%;
-  transform-origin: 0 125px;
-}
-
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+} */

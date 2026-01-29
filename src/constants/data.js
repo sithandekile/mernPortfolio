@@ -50,19 +50,19 @@ import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub, FaLinkedin, FaTwitter } 
 
   export const experience=[
             // { number: "2+", label: "Years Experience" },
-            { number: "20+", label: "Projects Completed" },
-            { number: "10+", label: "Technologies" },
+            { number: "10+", label: "Projects Completed" },
+            { number: "8+", label: "Technologies" },
             { number: "100%", label: "Commitment" },
           ];
           
   export const contactInfo = [
     { icon: FaEnvelope, label: "Email", value: "sthandie15@gmail.com", href: "sthandie15@gmail.com" },
-    { icon: FaPhone, label: "Phone", value: "+27 670 118 494", href: "tel:+27 670 118 494" },
+    { icon: FaPhone, label: "Phone", value: "+27 670 118 494", href: "cel:+27 670 118 494" },
     { icon: FaMapMarkerAlt, label: "Location", value: "Johannesburg, SA", href: "#" },
   ];
 
   export const socialLinks = [
-    { icon: FaGithub, name: "GitHub", href: "https://github.com", username: "@sithandekile" },
+    { icon: FaGithub, name: "GitHub", href: "https://github.com/sithandekile", username: "sithandekile" },
     { icon: FaLinkedin, name: "LinkedIn", href: "https://linkedin.com", username: "Sithandekile" },
     // { icon: FaTwitter, name: "Twitter", href: "https://twitter.com", username: "@thande" },
   ];
