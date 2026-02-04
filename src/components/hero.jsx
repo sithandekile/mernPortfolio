@@ -2,7 +2,7 @@ import React from "react";
 import { FaArrowDown, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import heroImage from "../assets/skillsHero.png";
 import { FaWhatsapp } from "react-icons/fa6";
-import resumeFile from "../assets/Sithandekile Resume.pdf";
+import resumeFile from "../assets/myResume.pdf";
 
 export const Hero = () => {
   const scrollToSection = (sectionId) => {
