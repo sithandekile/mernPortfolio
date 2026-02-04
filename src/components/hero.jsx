@@ -2,6 +2,7 @@ import React from "react";
 import { FaArrowDown, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import heroImage from "../assets/skillsHero.png";
 import { FaWhatsapp } from "react-icons/fa6";
+import resumeFile from "../assets/Sithandekile Resume.pdf";
 
 export const Hero = () => {
   const scrollToSection = (sectionId) => {
@@ -50,8 +51,8 @@ export const Hero = () => {
             </button>
 
             <a
-              href="/download-cv"
-              target="_blank"
+              href={resumeFile}
+              download="Sithandekile Resume.pdf"
               className="px-6 py-3 rounded-lg border border-sky-400 text-sky-400
               bg-sky-500/10 hover:bg-sky-500/20 hover:text-white
               hover:border-sky-300 hover:-translate-y-0.5
@@ -59,7 +60,7 @@ export const Hero = () => {
             >
               Download CV
             </a>
-            {/* <a href="./assets/myResume.pdf" download target="_blank" class="glowing-btn" style="background-color: rgb(26,24,24);"> */}
+            
 
           </div>
 
