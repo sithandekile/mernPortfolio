@@ -2,8 +2,7 @@ import React from "react";
 import { FaArrowDown, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import heroImage from "../assets/skillsHero.png";
 import { FaWhatsapp } from "react-icons/fa6";
-import resumeFile from "../assets/myResume.pdf";
-
+import resumeFile from "../assets/myResume.pdf"; 
 export const Hero = () => {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -78,7 +77,7 @@ export const Hero = () => {
               <FaGithub size={22} />
             </a>
             <a
-              href="https://github.com/sithandekile"
+              href="https://www.linkedin.com/in/sithandekile-ndhlovu-478b8b1a9"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-white/5 backdrop-blur

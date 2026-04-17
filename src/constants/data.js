@@ -1,6 +1,6 @@
  import taskImage from '../assets/preloved.png'
 import ecommerceImage from '../assets/ecommerce.png'
-import skillsImage from '../assets/skills2.png'
+import skillsImage from '../assets/skillsGape.png'
 import blogImage from '../assets/blog.png'
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
@@ -32,7 +32,7 @@ import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub, FaLinkedin, FaTwitter } 
       image: skillsImage,
       technologies: ["React", "Socket.io", "Express", "MongoDB", "Redux"],
       github: "https://github.com/sithandekile/skillsGapE",
-      live: "https://example.com",
+      live: "https://skills-gap-e.vercel.app/",
       featured: false,
     },
     // {

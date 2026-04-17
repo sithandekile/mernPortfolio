@@ -56,7 +56,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className="text-center md:text-right">
             <p className="text-gray-400 text-sm">
-              © {currentYear} All rights reserved made by Sithandekile Ndhlovu
+              &copy, {currentYear} All rights reserved made by Sithandekile Ndhlovu
             </p>
           </div>
         </div>
