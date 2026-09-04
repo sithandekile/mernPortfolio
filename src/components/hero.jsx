@@ -1,6 +1,6 @@
 import React from "react";
 import { FaArrowDown, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
-import heroImage from "../assets/skillsHero.png";
+import heroImage from "../assets/skillsHero.webp";
 import { FaWhatsapp } from "react-icons/fa6";
 import resumeFile from "../assets/myResume.pdf"; 
 export const Hero = () => {
@@ -15,7 +15,7 @@ export const Hero = () => {
     <section
       id="home"
       className="min-h-screen flex items-center justify-center relative overflow-hidden bg-cover bg-fixed"
-       style={{ backgroundImage: `url(${heroImage})`,backgroundSize:'cover' }} >
+       style={{ backgroundImage: `url(${heroImage})`,backgroundSize:'cover',backgroundPosition:'center', backgroundRepeat:'no-repeat'}} >
       {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-black opacity-50 to-purple-900/30"></div>
 
